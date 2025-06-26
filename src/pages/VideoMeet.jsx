@@ -15,9 +15,9 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 
 import { useNavigate} from "react-router-dom";
+import server from "../environment.js";
 
-
-const server_url = "https://backendzmeet.onrender.com";
+const server_url = server;
 var connections = {};
 const peerConfigConnections = {
   iceServers: [{ urls: "stun:stun.l.l.google.com:19302" }],
